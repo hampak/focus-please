@@ -12,7 +12,10 @@ const AboutTheDevHoverCard = ({ trigger }: AboutTheDevHoverCardProps) => {
   return (
     <HoverCard openDelay={100} closeDelay={100}>
       <HoverCardTrigger asChild>
-        <Button variant="link" className="text-sm hover:cursor-pointer">
+        <Button
+          variant="link"
+          className="text-sm hover:cursor-pointer bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent"
+        >
           {trigger}
         </Button>
       </HoverCardTrigger>
